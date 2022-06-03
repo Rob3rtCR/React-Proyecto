@@ -1,0 +1,54 @@
+.navLink {
+  font: 150% sans-serif;
+  text-decoration: none;
+  color: var(--clr-neon);
+  cursor: pointer;
+  padding: 0.25em;
+  border-radius: 00.45em;
+  text-shadow: 0 0 0.15em hsl(0 0% 100% / 0.3), 0 0 0.55em currentColor;
+  box-shadow:  inset 0px 0px 0.5em 0px var(--clr-neon), 0em 0em 0.5em 0 var(--clr-neon);
+  transition: background-color 180ms linear;
+}
+.navLink:hover {
+  color: black;
+  border-radius: 00.45em;
+  background: var(--clr-neon);
+  text-decoration: black;
+  box-shadow:  inset 0px 0px 0.5em 0px var(--clr-neon), 0em 0em 0.5em 0 var(--clr-neon);
+  transition: background-color 180ms linear;
+}
+.navMarcas {
+  display: flex;
+  justify-content: space-around;
+  font: small-caps 100%/200% serif;
+  color: #ffffff;
+  margin-top: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  text-shadow: 0 0 0.125em rgba(255, 0, 0, 0.3), 0 0 0.45em currentColor;
+  transition: background-color 100ms linear;
+  padding: 0.25em;
+  border-radius: 00.25em;
+}
+
+.navMarcas:hover,
+.navMarcas:focus {
+  color: black;
+  background: var(--clr-neon);
+  box-shadow:  inset 0px 0px 0.5em 0px var(--clr-neon), 0em 0em 0.5em 0 var(--clr-neon);
+  text-decoration: black;
+  text-shadow: 0 0 0.125em rgba(255, 255, 255, 0.705), 0 0 0.45em rgb(247, 0, 255);
+  transition: background-color 180ms linear;
+  border-radius: 00.25em;
+}
+
+.navMarcas:hover::after {
+    opacity: 1;
+}
+
+.nav1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}

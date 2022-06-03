@@ -1,0 +1,80 @@
+:root {
+    --clr-neon: hsl(317 100% 54%);
+    --clr-bg: hsl(323 21% 16%);
+}
+
+.imgItem{
+    width: auto;
+    height: 282px;
+}
+.item-title{
+    color: var(--clr-neon);
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.precio {
+    color: var(--clr-neon);
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+}
+
+.buttonBuy{
+    font-family: "Balsamiq sans", cursive;
+    text-decoration: none;
+    color: var(--clr-neon);
+    border: currentColor 0.125em solid;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.25em 1em;
+    border-radius: 00.25em;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+    box-shadow:  inset 0px 0px 0.5em 0px var(--clr-neon), 0em 0em 0.5em 0 var(--clr-neon);
+    position: relative;
+    transition: background-color 100ms linear;
+    
+}
+
+.buttonBuy::before {
+    content: "";
+    position: absolute;
+    background: var(--clr-neon);
+    top: 120%;
+    left: 0;
+    right: 100%;
+    bottom: 100%;
+    transform: perspective(1em) rotateX(0deg);
+}
+
+.buttonBuy::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 2em 0.5em var(--clr-neon);
+    opacity: 0;
+    transition: opacity 100ms linear;
+}
+
+.buttonBuy:hover,
+.buttonBuy:focus{
+    color: black;
+    background: var(--clr-neon);
+    text-decoration: black;
+}
+
+.buttonBuy:hover::after {
+    opacity: 1;
+}
+
+.item-info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.item{
+    padding: 1.5rem;
+}

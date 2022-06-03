@@ -1,0 +1,45 @@
+.detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+    color: aliceblue;
+}
+
+.description{
+    text-align: center;
+}
+img.logo{
+    border-radius: 6px;
+    width: 23rem;
+    margin-bottom: 10px;
+}
+
+.description__lista{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.addCart,
+.buttonCart{
+    margin-left: 1.8rem;
+}
+.buttonCart{
+    font-family: "Balsamiq sans", cursive;
+    text-decoration: none;
+    color: var(--clr-neon);
+    border: currentColor 0.125em solid;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.35em 2em;
+    border-radius: 00.25em;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+    box-shadow:  inset 0px 0px 0.5em 0px var(--clr-neon), 0em 0em 0.5em 0 var(--clr-neon);
+    transition: background-color 100ms linear;
+}
+.buttonCart:hover{
+    color: black;
+    background: var(--clr-neon);
+    text-decoration: black;
+}

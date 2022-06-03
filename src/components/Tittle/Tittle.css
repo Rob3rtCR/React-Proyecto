@@ -1,0 +1,16 @@
+.tittle {
+    color: azure;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+    
+}
+
+.tittle::before {
+    content: "";
+    position: absolute;
+    background: azure;
+    top: 120%;
+    left: 0;
+    right: 100%;
+    bottom: 100%;
+    transform: perspective(1em) rotateX(0deg);
+}
